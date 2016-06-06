@@ -47,10 +47,10 @@ module Vistek
 			idempotent string GetServiceRunningInfo();//device running info with xml string.
 			idempotent ServiceStatus isDeviceServiceOk();
 		};
-		
+
 		interface DeviceWatchService extends BaseWatchService
 		{
-			idempotent BasePhyServiceInfo GetPhysicInfo();
+			idempotent BasePhyServiceInfoList GetPhysicInfo();
 		};
 		
 	};
