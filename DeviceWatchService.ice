@@ -33,9 +33,9 @@ module Vistek
 		class BasePhyServiceInfo
 		{
 			string serviceID;
-			CpuInfo cpuInfo;
-			MemInfo memInfo;
-			RegisterInfo registerInfo;
+			CpuInfo cpuinfovalue;
+			MemInfo meminfovalue;
+			RegisterInfo registerinfovalue;
 		};
 		["clr:property"]
 		sequence<BasePhyServiceInfo> BasePhyServiceInfoList;
