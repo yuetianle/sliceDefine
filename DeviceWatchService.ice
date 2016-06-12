@@ -6,14 +6,12 @@ module Vistek
 {
 	module Device
 	{
-		["clr:property"]
 		class CpuInfo
 		{
 			float cpuUseRate;//0-100
 			optional(0) int cpuCount = 0;
 			optional(1) int physicCpuCount = 0;
 		};
-		["clr:property"]
 		class MemInfo
 		{
 			float memSize;
@@ -21,7 +19,6 @@ module Vistek
 			float aviableMemSize;
 			float memUseRate;//0-100
 		};
-		["clr:property"]
 		class RegisterInfo
 		{
 			int registerSuccessCount;
@@ -29,7 +26,6 @@ module Vistek
 			string registerSucccessDeviceList;//DeviceID
 			string registerFailDeviceList;//DeviceID
 		};
-		["clr:property"]
 		class BasePhyServiceInfo
 		{
 			string serviceID;
@@ -37,11 +33,9 @@ module Vistek
 			MemInfo meminfovalue;
 			RegisterInfo registerinfovalue;
 		};
-		["clr:property"]
 		sequence<BasePhyServiceInfo> BasePhyServiceInfoList;
 		
 		enum ServiceStatusType{ vStatusOK=0, vStatusError=1};
-		["clr:property"]
 		class ServiceStatus
 		{
 			ServiceStatusType status;
