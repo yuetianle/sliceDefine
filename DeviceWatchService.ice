@@ -19,11 +19,11 @@ module Vistek
 			float aviableMemSize;
 			float memUseRate;//0-100
 		};
-		class RegisterInfo
+		class DeviceRegisterInfo
 		{
 			int registerSuccessCount;
 			int registerFailCount;
-			string registerSucccessDeviceList;//DeviceID
+			string registerSuccessDeviceList;//DeviceID
 			string registerFailDeviceList;//DeviceID
 		};
 		class BasePhyServiceInfo
@@ -31,7 +31,7 @@ module Vistek
 			string serviceID;
 			CpuInfo cpuinfovalue;
 			MemInfo meminfovalue;
-			RegisterInfo registerinfovalue;
+			DeviceRegisterInfo registerinfovalue;
 		};
 		sequence<BasePhyServiceInfo> BasePhyServiceInfoList;
 		
